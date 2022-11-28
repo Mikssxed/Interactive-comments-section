@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Frontend Mentor | Interactive comments section</title>
+  </head>
+  <body>
+    <main>
+      <div id="comment1" class="block">
+        <section class="comment">
+          <div class="scorePanel">
+            <button class="plus"><img src="./images/icon-plus.svg" /></button>
+            <div class="score"></div>
+            <button class="minus"><img src="./images/icon-minus.svg" /></button>
+          </div>
+          <section class="main">
+            <div class="header">
+              <div class="user"></div>
+              <button class="replyButton">
+                <img src="./images/icon-reply.svg" />Reply
+              </button>
+            </div>
+            <div class="content"></div>
+          </section>
+        </section>
+        <section class="replies"></section>
+      </div>
+      <div id="comment2" class="block">
+        <section class="comment">
+          <div class="scorePanel">
+            <button class="plus"><img src="./images/icon-plus.svg" /></button>
+            <div class="score"></div>
+            <button class="minus"><img src="./images/icon-minus.svg" /></button>
+          </div>
+          <section class="main">
+            <div class="header">
+              <div class="user"></div>
+              <button class="replyButton">
+                <img src="./images/icon-reply.svg" />Reply
+              </button>
+            </div>
+            <div class="content"></div>
+          </section>
+        </section>
+        <section class="replies">
+          <div id="reply1" class="reply">
+            <div class="scorePanel">
+              <button class="plus"><img src="./images/icon-plus.svg" /></button>
+              <div class="score"></div>
+              <button class="minus">
+                <img src="./images/icon-minus.svg" />
+              </button>
+            </div>
+            <section class="main">
+              <div class="header">
+                <div class="user"></div>
+                <button class="replyButton replyToReplyButton">
+                  <img src="./images/icon-reply.svg" />Reply
+                </button>
+              </div>
+              <div class="content"></div>
+            </section>
+          </div>
+          <div class="replyToReply"></div>
+          <div id="reply2" class="reply">
+            <div class="scorePanel">
+              <button class="plus"><img src="./images/icon-plus.svg" /></button>
+              <div class="score"></div>
+              <button class="minus">
+                <img src="./images/icon-minus.svg" />
+              </button>
+            </div>
+            <section class="main">
+              <div class="header">
+                <div class="user"></div>
+                <button class="delete">
+                  <img src="./images/icon-delete.svg" />Delete
+                </button>
+                <button class="edit firstToEdit">
+                  <img src="./images/icon-edit.svg" />Edit
+                </button>
+              </div>
+              <div class="content"></div>
+            </section>
+          </div>
+        </section>
+      </div>
+      <div id="newComments"></div>
+      <div id="post">
+        <img class="avatarComment" src="./images/avatars/image-juliusomo.png" />
+        <textarea id="textMain" placeholder="Add a comment..."></textarea>
+        <button class="send">SEND</button>
+      </div>
+    </main>
+    <script type="module" src="./dist/app.js"></script>
+  </body>
+</html>
